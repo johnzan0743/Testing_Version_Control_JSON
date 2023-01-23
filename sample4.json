@@ -1,7 +1,7 @@
 {
   "people" : [
     {
-       "firstName": "Joe",
+       "firstName": "Michael",
        "lastName": "Jackson",
        "gender": "male",
        "age": 28,
