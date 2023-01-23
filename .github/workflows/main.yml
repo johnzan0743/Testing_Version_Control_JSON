@@ -13,6 +13,9 @@ jobs:
         - name: Repo in Testing Branch is Updated
           run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
         
+        - name: Checkout The Testing Branch
+          run: git checkout testing
+          
         - name: Create Pull Request
           run: gh pr create --title "New PR Has Been Created" --body "Could you please review the new changes?" --reviewer johnzan0743 --base main --head testing
           env: 
